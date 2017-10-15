@@ -7,7 +7,8 @@ class SideBarIssue extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            showPending : true
+            showPending : true,
+            isResolved : false
         }
     }
     toggleShowPending() {
@@ -17,7 +18,17 @@ class SideBarIssue extends Component {
         });
         this.forceUpdate();
     }
+    resolveThisShit() {
+        this.props.disappear(true);
+        this.setState({
+            isResolved : true
+        });
+        this.forceUpdate();
+    }
     render() {
+
+        const sideBarIssueStyle = (this.state.isResolved) ?  "SideBarIssue-hidden" : "SideBarIssue" ;
+
         const markPendingComponent = (this.props.pending) ? <span /> :
             <div className={this.state.showPending ? "SideBarIssue-header-mark-pending" : "SideBarIssue-header-mark-pending-hide"} onClick={() => {this.toggleShowPending()}}>Defer</div>;
 
@@ -41,12 +52,12 @@ class SideBarIssue extends Component {
         }
 
         return (
-            <div className="SideBarIssue">
+            <div className={sideBarIssueStyle}>
                 <div className="SideBarIssue-header">
                     <div className="SideBarIssue-header-title">{this.props.title}</div>
                     <div className="SideBarIssue-header-mark">
                         {markPendingComponent}
-                        <div className="SideBarIssue-header-mark-resolved">Resolve</div>
+                        <div className="SideBarIssue-header-mark-resolved" onClick={() => {this.resolveThisShit()}}>Resolve</div>
                     </div>
                 </div>
                 <div className="SideBarIssue-info">
@@ -73,6 +84,13 @@ const mapDispatchToProps = (dispatch) => {
         color: (boolean) => {
             dispatch({
                 type: 'color',
+                page: boolean
+            });
+        },
+
+        disappear: (boolean) => {
+            dispatch({
+                type: 'disappear',
                 page: boolean
             });
         },

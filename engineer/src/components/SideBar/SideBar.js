@@ -18,11 +18,7 @@ class SideBar extends Component {
     }
 
     render() {
-        const bloobieIssue = (this.state.bloobed) ?
-            <div>
-                <SideBarIssue title="Audio Port" time="23:40, 8 September 2017" logger="Passenger" commentsTS={false} commentsCA={false} pending={false} />
-            </div> : <div />;
-
+        const bloobieClassname = (this.state.bloobed) ? "bloob" : "nobloob";
         const threefourbee =
             <div>
                 <SideBarIssue title="Meal Tray" time="23:41, 8 September 2017" logger="Passenger" commentsTS={false} commentsCA={false} pending={false} />
@@ -43,8 +39,8 @@ class SideBar extends Component {
                         <div className="SideBar-header-progress-circ1" />
                         <div className={this.props.color ? "SideBar-header-progress-line1" : "SideBar-header-progress-line"} />
                         <div className={this.props.color ? "SideBar-header-progress-circ1" : "SideBar-header-progress-circ"} />
-                        <div className="SideBar-header-progress-line" />
-                        <div className="SideBar-header-progress-circ" />
+                        <div className={this.props.disappear ? "SideBar-header-progress-line-hidden" : "SideBar-header-progress-line"} />
+                        <div className={this.props.disappear ? "SideBar-header-progress-circ-hidden" : "SideBar-header-progress-circ"} />
                     </div>
                 </div>
                 {this.props.seatNumber === "34B" ? threefourbee: otherIssues}
@@ -55,7 +51,8 @@ class SideBar extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        color: state.color
+        color: state.color,
+        disappear: state.disappear
     }
 };
 

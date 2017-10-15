@@ -13,6 +13,10 @@ const reducer =
                 return Object.assign({}, state, {
                     color: true
                 });
+            case "disappear":
+                return Object.assign({}, state, {
+                    disappear: true
+                });
             default:
                 return state;
         }
