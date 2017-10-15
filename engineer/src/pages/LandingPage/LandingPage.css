@@ -1,7 +1,96 @@
 .LandingPage {
     font-family: 'Montserrat-Light', sans-serif;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
-    background-color: #565656;
+    background-color: white;
+}
+
+.LandingPage-header {
+    font-size: 24px;
+}
+
+.LandingPage-subheader {
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+.LandingPage-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.LandingPage-col > span {
+    font-size: 20px;
+}
+
+.LandingPage-row-flight1 {
+    margin: 20px;
+    width: 100px;
+    height: 120px;
+    border-radius: 8px;
+    background-color: #fcd130;
+    color: white;
+}
+
+.LandingPage-row-flight2 {
+    margin: 20px;
+    width: 100px;
+    height: 130px;
+    border-radius: 8px;
+    background-color: #fcd130;
+    color: white;
+}
+.LandingPage-row-flight3 {
+    margin: 20px;
+    width: 100px;
+    height: 280px;
+    border-radius: 8px;
+    background-color: #fcd130;
+    color: white;
+}
+.LandingPage-row-flight4 {
+    margin: 20px;
+    width: 100px;
+    height: 350px;
+    border-radius: 8px;
+    background-color: #fcd130;
+    color: white;
+}
+.LandingPage-row-flight5 {
+    margin: 20px;
+    width: 100px;
+    height: 350px;
+    border-radius: 8px;
+    background-color: #fcd130;
+    color: white;
+}
+.LandingPage-row-flight1:hover {
+    cursor: pointer;
+    background-color: #1d4886;
+    color: white;
+}
+.LandingPage-row-flight2:hover {
+    cursor: pointer;
+    background-color: #1d4886;
+    color: white;
+}
+.LandingPage-row-flight3:hover {
+    cursor: pointer;
+    background-color: #1d4886;
+    color: white;
+}
+.LandingPage-row-flight4:hover {
+    cursor: pointer;
+    background-color: #1d4886;
+    color: white;
+}
+.LandingPage-row-flight5:hover {
+    cursor: pointer;
+    background-color: #1d4886;
+    color: white;
 }
