@@ -18,16 +18,16 @@ class AnalyticsPage extends Component {
    render() {
 
         const data = [
-            {name: '30 Aug', SQ666: 2400},
-            {name: '31 Aug', SQ666: 3256},
-            {name: '1 Sept', SQ666: 1462},
-            {name: '2 Sept', SQ666: 6422},
-            {name: '3 Sept', SQ666: 7231},
-            {name: '4 Sept', SQ666: 8350},
-            {name: '5 Sept', SQ666: 5329},
-            {name: '6 Sept', SQ666: 8051},
-            {name: '7 Sept', SQ666: 1490},
-            {name: '8 Sept', SQ666: 1018},
+            {name: '30 Aug', SQ31: 2400},
+            {name: '31 Aug', SQ31: 3256},
+            {name: '1 Sept', SQ31: 1462},
+            {name: '2 Sept', SQ31: 6422},
+            {name: '3 Sept', SQ31: 7231},
+            {name: '4 Sept', SQ31: 8350},
+            {name: '5 Sept', SQ31: 5329},
+            {name: '6 Sept', SQ31: 8051},
+            {name: '7 Sept', SQ31: 1490},
+            {name: '8 Sept', SQ31: 1018},
         ];
 
         return (
@@ -55,7 +55,7 @@ class AnalyticsPage extends Component {
                             <CartesianGrid strokeDasharray="3 3"/>
                             <Tooltip/>
                             <Legend />
-                            <Line type="monotone" dataKey="SQ666" stroke="#fcb130" activeDot={{r: 8}}/>
+                            <Line type="monotone" dataKey="SQ31" stroke="#fcb130" activeDot={{r: 8}}/>
                         </LineChart>
                     </div>
                     <div className="Analytics-DefectTypes">
