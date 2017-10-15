@@ -8,9 +8,11 @@ class AnalyticsPage extends Component {
 
     constructor(props) {
         super(props);
+        {/*
         this.state = {
-
+            value: false
         }
+        */}
     }
 
    render() {
@@ -31,9 +33,15 @@ class AnalyticsPage extends Component {
         return (
             <div className="AnalyticsPage">
                 <div className="Analytics-One-Flight">
-                    <div className="header">
+                    <div className="Header">
+                        {/*
                         <div className="Toggle">
+                            <label className="switch">
+                                <input type="checkbox" />
+                                <span className="slider round"></span>
+                            </label>
                         </div>
+                        */}
                         <div className="TotalNumDefects">
                             <CountUp className="TotalNumDefects-Num" start={0} end={1018} duration={2}/>
                             <span className="TotalNumDefects-Words">Total Defects</span>
@@ -47,12 +55,12 @@ class AnalyticsPage extends Component {
                             <CartesianGrid strokeDasharray="3 3"/>
                             <Tooltip/>
                             <Legend />
-                            <Line type="monotone" dataKey="SQ666" stroke="#8884d8" activeDot={{r: 8}}/>
+                            <Line type="monotone" dataKey="SQ666" stroke="#fcb130" activeDot={{r: 8}}/>
                         </LineChart>
                     </div>
                     <div className="Analytics-DefectTypes">
                         <div className="SeatDefects">
-                            <CountUp className="SeatDefects-Num" start={0} end={353} duration={2}/>
+                            <CountUp className="SeatDefects-Num" start={0} end={372} duration={2}/>
                             <span className="SeatDefects-Words">Seats</span>
                         </div>
                         <div className="WashroomDefects">
