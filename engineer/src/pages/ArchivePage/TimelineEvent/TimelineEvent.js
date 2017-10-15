@@ -16,7 +16,7 @@ class TimelineEvent extends Component {
                 </div>
 
                 <div className="timeline-content">
-                    <span className="defect-date">{this.props.timelineDate}</span><span className="num-of-defects">10 <i className="fa fa-wrench"></i></span>
+                    <span className="defect-date">{this.props.timelineDate}</span><span className="num-of-defects">{this.props.defects} <i className="fa fa-wrench"></i></span>
                 </div>
             </div>
         )
