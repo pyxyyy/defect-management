@@ -126,6 +126,18 @@ class DefectsPage extends Component {
         this.setState({
             seatNumber: seat + alphabets.charAt(seat % 9)
         });
+        //
+        // if(this.state.seatSele.indexOf(seat) > -1 ) {
+        //     this.setState({
+        //         seatAvailable: this.state.seatAvailable.concat(seat),
+        //         seatReserved: this.state.seatReserved.filter(res => res != seat)
+        //     })
+        // } else {
+        //     this.setState({
+        //         seatReserved: this.state.seatReserved.concat(seat),
+        //         seatAvailable: this.state.seatAvailable.filter(res => res != seat)
+        //     })
+        // }
     }
 }
 
