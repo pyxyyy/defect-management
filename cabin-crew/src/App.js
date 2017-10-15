@@ -34,7 +34,6 @@ class App extends Component {
         })
     }
 
-    onSelect() {
     changeCrewState() {
         this.setState({
             isFirstPage: !this.state.isFirstPage
@@ -47,13 +46,13 @@ class App extends Component {
         let styleButtonC = this.state.buttonC ? "SelectDefect-button-clicked" : "SelectDefect-button-unclicked";
 
         const page1 =
-            <div>
+            <div className="container">
                 <div className="InputForm">
                     <label className="InputNum">
                         Please input a number:
                         <input type="text" name="name" />
                     </label>
-                    <input type="submit" onClick={this.changeCrewState} />
+                    <input className="btnSubmit" type="submit" onClick={this.changeCrewState} />
                 </div>
             </div>;
 

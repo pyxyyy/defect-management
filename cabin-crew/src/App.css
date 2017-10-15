@@ -1,13 +1,9 @@
-.InputForm {
+.InputNum {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.InputNum {
     font-family: "Montserrat-Light", sans-serif;
     text-align: center;
-    display: flex;
     margin-top: 20%;
     margin-left: 10%;
 }
@@ -121,4 +117,12 @@
     -webkit-transition: background-color 200ms linear;
     -ms-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
+}
+
+.container {
+    padding: 30% 0;
+    margin: 0 30%;
+}
+
+.btnSubmit {
 }
