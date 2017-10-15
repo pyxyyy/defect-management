@@ -41,8 +41,36 @@ class DefectsPage extends Component {
                     "commentsCA": false,
                     "pending": false
                 },
-            ]
-        };
+            ],
+            exampleIssues: [
+                {
+                    "title": "Meal Tray",
+                    "time": "23:41, 8 September 2017",
+                    "logger": "Passenger",
+                    "commentsTS": false,
+                    "commentsCA": false,
+                    "pending": false,
+                },
+                {
+                    "title": "Audio Port",
+                    "time": "23:40, 8 September 2017",
+                    "logger": "Passenger",
+                    "commentsTS": false,
+                    "commentsCA": false,
+                    "pending": false,
+                },
+                {
+                    "title": "Reading Light",
+                    "time": "07:10, 8 September 2017",
+                    "logger": "Cabin Crew",
+                    "commentsTS": false,
+                    "commentsCA": true,
+                    "pending": true,
+                }
+            ]};
+
+
+
         for (let i = 0; i < 10; i++) {
             this.state.seat.push('' + i);
         }

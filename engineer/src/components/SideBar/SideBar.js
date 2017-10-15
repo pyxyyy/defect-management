@@ -17,10 +17,23 @@ class SideBar extends Component {
         this.forceUpdate();
     }
 
-
     render() {
+        const bloobieIssue = (this.state.bloobed) ?
+            <div>
+                <SideBarIssue title="Audio Port" time="23:40, 8 September 2017" logger="Passenger" commentsTS={false} commentsCA={false} pending={false} />
+            </div> : <div />;
 
-        const bloobieIssue = (this.state.bloobed) ? "<div><SideBarIssue title=\"Audio Port\" time=\"23:40, 8 September 2017\" logger=\"Passenger\" commentsTS={false} commentsCA={false} pending={false}/></SideBarIssue>" : "";
+        const threefourbee =
+            <div>
+                <SideBarIssue title="Meal Tray" time="23:41, 8 September 2017" logger="Passenger" commentsTS={false} commentsCA={false} pending={false} />
+                <SideBarIssue title="Audio Port" time="23:40, 8 September 2017" logger="Passenger" commentsTS={true} commentsCA={false} pending={false} />
+                <SideBarIssue title="Reading Light" time="07:10, 8 September 2017" logger="Cabin Crew" commentsTS={false} commentsCA={true} pending={true} />
+            </div>;
+        const otherIssues =
+            <div>
+                <SideBarIssue title="Meal Tray" time="23:41, 8 September 2017" logger="Passenger" commentsTS={true} commentsCA={false} pending={false} />
+                <SideBarIssue title="Seat Belt" time="07:10, 8 September 2017" logger="Cabin Crew" commentsTS={false} commentsCA={true} pending={true} />
+            </div>;
 
         return (
             <div className="SideBar">
@@ -34,11 +47,7 @@ class SideBar extends Component {
                         <div className="SideBar-header-progress-circ" />
                     </div>
                 </div>
-                {this.props.issues.length > 0 ? <div>
-                <SideBarIssue title="Meal Tray" time="23:41, 8 September 2017" logger="Passenger" commentsTS={false} commentsCA={false} pending={false}/>
-                <SideBarIssue title="Audio Port" time="23:40, 8 September 2017" logger="Passenger" commentsTS={false} commentsCA={false} pending={false}/>
-                <SideBarIssue title="Reading Light" time="07:10, 8 September 2017" logger="Cabin Crew" commentsTS={false} commentsCA={true} pending={true}/>
-                </div> : <div />};
+                {this.props.seatNumber === "34B" ? threefourbee: otherIssues}
             </div>
         );
     }

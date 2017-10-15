@@ -23,11 +23,11 @@ class SideBarIssue extends Component {
 
         const commentsTSComponent =
             <div>
-                <SideBarIssueComment new={false} avatar="TS" text="idk what to put" time="02:30, 9 September 2017"/>
-                <SideBarIssueComment new={false} avatar="TS" text="contacted my minions to fix this stupid shit because I'm rich" time="02:30, 9 September 2017" />
+                <SideBarIssueComment new={false} avatar="TS" text="James will fix it by 10 Sep 2017" time="02:32, 9 September 2017"/>
+                <SideBarIssueComment new={false} avatar="TS" text="Assigned to James for fix" time="02:30, 9 September 2017" />
             </div>;
         const commentsCAComponent =
-                <SideBarIssueComment new={false} avatar="CA" text="i am captain america and i have hacked your site" time="02:30, 9 September 2230"/>;
+                <SideBarIssueComment new={false} avatar="CA" text="Waiting for spare parts to arrive" time="02:30, 9 September 2230"/>;
         const commentsNoneComponent = <div className="blank" />;
 
         const isCommentsNoneComponent = (!this.props.commentsTS && !this.props.commentsCA);

@@ -46,19 +46,17 @@ class App extends Component {
         let styleButtonC = this.state.buttonC ? "SelectDefect-button-clicked" : "SelectDefect-button-unclicked";
 
         const page1 =
-            <div className="container">
                 <div className="InputForm">
-                    <label className="InputNum">
-                        Please input a number:
-                        <input type="text" name="name" />
-                    </label>
+                    <div className="InputNum">Enter the defect's location:</div>
+                    <div className="InputGroup">
+                    <input className="Input-input"type="text" name="name" />
                     <input className="btnSubmit" type="submit" onClick={this.changeCrewState} />
-                </div>
-            </div>;
+                    </div>
+                </div>;
 
         const page2 = <div className="Defects">
                         <span className="Instructions">
-                            We are sorry something is broken.
+                            We are sorry something is broken. <br/>
                             You can notify us of the defect(s) by tapping on one or more of the options below. <br/>
                             Logging this defect will ensure that your journey with us will be a great one.<br/>
                         </span>
