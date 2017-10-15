@@ -1,3 +1,100 @@
 .ArchivePage {
     font-family: 'Montserrat-Light', sans-serif;
+    padding:0 20%;
 }
+
+a, a:hover, a:focus, a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.div-col-2 {
+    width:16.7%;
+    float:left;
+}
+
+.div-col-10 {
+    width: 83.3%;
+    float: left;
+}
+
+.timeline > div:first-child {
+    width: 7px !important;
+    background-color: #fcb130 !important;
+    left: 16px !important;
+}
+
+.timeline > div:not(:first-child) > div:first-child {
+    background: #fcb130 !important;
+    top: 25% !important;
+}
+
+.timeline-event {
+    text-align: left;
+    font-size: 1.2em;
+}
+
+.timeline-event div:nth-child(3) {
+    padding:1em 1em !important;
+    background-color: #f5f5f5 !important;
+}
+
+.timeline-event p {
+    margin:0.7em;
+    font-weight:bold;
+}
+
+.timeline-event span {
+    margin: 0 1em;
+}
+
+.timeline-event label {
+    font-size: 1em;
+    padding: 0 0.5em;
+    color: #1d4886;
+}
+
+.archive-header + div > section {
+    margin:0 !important;
+}
+
+.archive-header h1 {
+    text-align: left;
+    color: #1d4886;
+}
+
+.fa {
+    font-size: 1.2em;
+}
+.fa-circle {
+    color: #fcb130;
+    position: relative;
+    right: 25%;
+    bottom: 7%;
+    font-size: 1.7em;
+}
+
+ul li {
+    list-style: none;
+    line-height: 2em;
+    text-align: left;
+}
+
+ul li > ul li {
+    border-left: 6px solid #CCC;
+}
+
+ul li > ul li a {
+    margin-left: 1em;
+}
+
+ul li > ul li:hover, ul li > ul li:hover a {
+    font-weight:bold;
+    color: #1d4886;
+    border-color: #1d4886;
+}
+
+ul li + li {
+    margin-top:0.5em;
+}
+
