@@ -37,3 +37,7 @@
 .FlightPage-SideBar {
     width: 25%;
 }
+
+.FlightPage-Body {
+    width: 100%;
+}

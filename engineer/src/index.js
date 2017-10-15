@@ -5,5 +5,5 @@ import App from './App';
 import Flight from './components/Flight/Flight';
 import registerServiceWorker from './registerServiceWorker';
 
-ReactDOM.render(<Flight />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();

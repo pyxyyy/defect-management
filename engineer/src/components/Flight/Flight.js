@@ -16,10 +16,10 @@ class Flight extends Component {
             ],
             complete: []
         };
-        for (let i = 0; i < 34; i++) {
+        for (let i = 0; i < 6; i++) {
             this.state.seat.push('');
         }
-        for (let i = 0; i < 51; i++) {
+        for (let i = 0; i < 9; i++) {
             this.state.seat1.push('');
         }
     }
@@ -42,63 +42,105 @@ class Flight extends Component {
         return (
             <div className="aeroplane">
                 <DrawGrid
-                    class = "section1"
+                    class = "section"
                     seat = { this.state.seat }
                     complete = { this.state.complete }
                     incomplete = { this.state.incomplete }
                     onClickData = { this.onClickData.bind(this) }
                 />
                 <DrawGrid
-                    class = "section3"
+                    class = "section"
                     seat = { this.state.seat }
                     complete = { this.state.complete }
                     incomplete = { this.state.incomplete }
                     onClickData = { this.onClickData.bind(this) }
                 />
                 <DrawGrid
-                    class = "section3"
+                    class = "section"
                     seat = { this.state.seat }
                     complete = { this.state.complete }
                     incomplete = { this.state.incomplete }
                     onClickData = { this.onClickData.bind(this) }
                 />
                 <DrawGrid
-                    class = "section2"
+                    class = "section"
+                    seat = { this.state.seat }
+                    complete = { this.state.complete }
+                    incomplete = { this.state.incomplete }
+                    onClickData = { this.onClickData.bind(this) }
+                />
+                <DrawGrid
+                    class = "section"
+                    seat = { this.state.seat }
+                    complete = { this.state.complete }
+                    incomplete = { this.state.incomplete }
+                    onClickData = { this.onClickData.bind(this) }
+                />
+                <DrawGrid
+                    class = "section"
                     seat = { this.state.seat1 }
                     complete = { this.state.complete }
                     incomplete = { this.state.incomplete }
                     onClickData = { this.onClickData.bind(this) }
                 />
                 <DrawGrid
-                    class = "section4"
+                    class = "section"
                     seat = { this.state.seat1 }
                     complete = { this.state.complete }
                     incomplete = { this.state.incomplete }
                     onClickData = { this.onClickData.bind(this) }
                 />
                 <DrawGrid
-                    class = "section4"
+                    class = "section"
                     seat = { this.state.seat1 }
                     complete = { this.state.complete }
                     incomplete = { this.state.incomplete }
                     onClickData = { this.onClickData.bind(this) }
                 />
                 <DrawGrid
-                    class = "section2"
+                    class = "section"
+                    seat = { this.state.seat1 }
+                    complete = { this.state.complete }
+                    incomplete = { this.state.incomplete }
+                    onClickData = { this.onClickData.bind(this) }
+                />
+                <DrawGrid
+                    class = "section"
+                    seat = { this.state.seat1 }
+                    complete = { this.state.complete }
+                    incomplete = { this.state.incomplete }
+                    onClickData = { this.onClickData.bind(this) }
+                />
+                <DrawGrid
+                    class = "section"
                     seat = { this.state.seat }
                     complete = { this.state.complete }
                     incomplete = { this.state.incomplete }
                     onClickData = { this.onClickData.bind(this) }
                 />
                 <DrawGrid
-                    class = "section4"
+                    class = "section"
                     seat = { this.state.seat }
                     complete = { this.state.complete }
                     incomplete = { this.state.incomplete }
                     onClickData = { this.onClickData.bind(this) }
                 />
                 <DrawGrid
-                    class = "section4"
+                    class = "section"
+                    seat = { this.state.seat }
+                    complete = { this.state.complete }
+                    incomplete = { this.state.incomplete }
+                    onClickData = { this.onClickData.bind(this) }
+                />
+                <DrawGrid
+                    class = "section"
+                    seat = { this.state.seat }
+                    complete = { this.state.complete }
+                    incomplete = { this.state.incomplete }
+                    onClickData = { this.onClickData.bind(this) }
+                />
+                <DrawGrid
+                    class = "section"
                     seat = { this.state.seat }
                     complete = { this.state.complete }
                     incomplete = { this.state.incomplete }
