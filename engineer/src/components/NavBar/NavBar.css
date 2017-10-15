@@ -5,28 +5,48 @@
     padding: 10px 40px 10px 40px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Montserrat-Light', sans-serif;
 }
+
+.NavBar-flight {
+
+}
+
+.NavBar-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .NavBar-logo {
     height: 40px;
     padding-left: 25px;
 }
 
-.NavBar-home {
-    padding-right: 25px;
-    padding-left: 25px;
+.NavBar-defects {
+    padding: 0 25px;
 }
 
-.NavBar-home:hover {
+.NavBar-defects:hover {
     color: #fcd130;
     cursor: pointer;
 }
 
+.NavBar-analytics {
+    padding: 0 25px;
+}
+
+.NavBar-analytics:hover {
+    color: #fcd130;
+    cursor: pointer;
+}
+
+
 .NavBar-archive {
-    padding-right: 25px;
-    padding-left: 25px;
+    padding: 0 25px;
 }
 
 .NavBar-archive:hover {

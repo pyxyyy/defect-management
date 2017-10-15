@@ -8,7 +8,7 @@ class SideBarIssue extends Component {
     }
     render() {
         const markPendingComponent = (this.props.pending) ? <span /> :
-            <div className="SideBarIssue-header-mark-pending">Pending</div>;
+            <div className="SideBarIssue-header-mark-pending">Defer</div>;
 
         const commentsTSComponent =
             <div>
