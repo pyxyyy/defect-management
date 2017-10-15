@@ -135,7 +135,7 @@ class Toilet extends Component {
                     <tr>
                         <td className={this.props.complete.indexOf('toilet1') > -1 ? 'complete':
                             this.props.incomplete.indexOf('toilet1') > -1 ? 'incomplete': 'pending'}
-                            key={'toilet1'} onClick = {e => this.onClickSeat('toilet1')}>
+                            key={'toilet1'} >
                             <img className="toilet-svg" src={ToiletSvg} />
                         </td>
                     </tr>
@@ -144,7 +144,7 @@ class Toilet extends Component {
                     <tr>
                         <td className={this.props.complete.indexOf('toilet2') > -1 ? 'complete':
                             this.props.incomplete.indexOf('toilet2') > -1 ? 'incomplete': 'pending'}
-                            key={'toilet2'} onClick = {e => this.onClickSeat('toilet2')}>
+                            key={'toilet2'} >
                             <img className="toilet-svg" src={ToiletSvg} />
                         </td>
                     </tr>
