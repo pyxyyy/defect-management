@@ -23,6 +23,7 @@ class Flight extends Component {
                     seat2 = {this.props.seat2 }
                     complete = { this.props.complete }
                     incomplete = { this.props.incomplete }
+                    selected = { this.props.selected }
                     onClickData = { this.onClickData.bind(this) }
                 />
                 <DrawGrid
@@ -32,6 +33,7 @@ class Flight extends Component {
                     seat2 = {this.props.seat5 }
                     complete = { this.props.complete }
                     incomplete = { this.props.incomplete }
+                    selected = { this.props.selected }
                     onClickData = { this.onClickData.bind(this) }
                 />
                 <Toilet
@@ -47,6 +49,7 @@ class Flight extends Component {
                     seat2 = {this.props.seat8 }
                     complete = { this.props.complete }
                     incomplete = { this.props.incomplete }
+                    selected = { this.props.selected }
                     onClickData = { this.onClickData.bind(this) }
                 />
                 <DrawGrid
@@ -56,6 +59,7 @@ class Flight extends Component {
                     seat2 = {this.props.seat11 }
                     complete = { this.props.complete }
                     incomplete = { this.props.incomplete }
+                    selected = { this.props.selected }
                     onClickData = { this.onClickData.bind(this) }
                 />
             </div>
@@ -70,7 +74,8 @@ class Toilet extends Component {
                 <table className="grid1">
                     <tbody>
                     <tr>
-                        <td className={this.props.complete.indexOf('toilet1') > -1 ? 'complete':
+                        <td className={
+                            this.props.complete.indexOf('toilet1') > -1 ? 'complete':
                             this.props.incomplete.indexOf('toilet1') > -1 ? 'incomplete': 'pending'}
                             key={'toilet1'} onClick = {e => this.onClickSeat('toilet1')}>
                             <img className="toilet-svg" src={ToiletSvg} />
@@ -103,7 +108,9 @@ class DrawGrid extends Component {
                     <tbody>
                     <tr>
                         { this.props.seat.map( row =>
-                            <td className={this.props.complete.indexOf(row) > -1 ? 'complete':
+                            <td className={
+                                this.props.selected.indexOf(row) > -1 ? 'selected':
+                                this.props.complete.indexOf(row) > -1 ? 'complete':
                                 this.props.incomplete.indexOf(row) > -1 ? 'incomplete': 'pending'}
                                 key={row} onClick = {e => this.onClickSeat(row)}>
                                 <img className="seat" src={Seat} />
@@ -112,8 +119,11 @@ class DrawGrid extends Component {
                     <tr><td> </td></tr>
                     <tr>
                         { this.props.seat1.map( row =>
-                            <td className={this.props.complete.indexOf(row) > -1 ? 'complete':
-                                this.props.incomplete.indexOf(row) > -1 ? 'incomplete': 'pending'}
+                            <td
+                                className={
+                                    this.props.selected.indexOf(row) > -1 ? 'selected':
+                                    this.props.complete.indexOf(row) > -1 ? 'complete':
+                                    this.props.incomplete.indexOf(row) > -1 ? 'incomplete': 'pending'}
                                 key={row} onClick = {e => this.onClickSeat(row)}>
                                 <img className="seat" src={Seat} />
                             </td>) }
@@ -121,7 +131,9 @@ class DrawGrid extends Component {
                     <tr><td> </td></tr>
                     <tr>
                         { this.props.seat2.map( row =>
-                            <td className={this.props.complete.indexOf(row) > -1 ? 'complete':
+                            <td className={
+                                this.props.selected.indexOf(row) > -1 ? 'selected':
+                                this.props.complete.indexOf(row) > -1 ? 'complete':
                                 this.props.incomplete.indexOf(row) > -1 ? 'incomplete': 'pending'}
                                 key={row} onClick = {e => this.onClickSeat(row)}>
                                 <img className="seat" src={Seat} />
