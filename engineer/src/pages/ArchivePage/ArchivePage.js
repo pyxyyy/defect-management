@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './ArchivePage.css';
 import {FontAwesome} from 'react-fontawesome';
-import {Row, Col} from 'react-bootstrap';
 import TimelineEvent from "./TimelineEvent/TimelineEvent";
 import ScrollAnimation from 'react-animate-on-scroll';
 import ArchiveDefectsPage from '../ArchiveDefectsPage/ArchiveDefectsPage';
