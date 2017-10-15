@@ -9,10 +9,13 @@ class NavBar extends Component {
     render() {
         return (
             <div className="NavBar">
-                <div className="NavBar-home">Defects</div>
-                <div className="NavBar-home">Analytics</div>
-                <div className="NavBar-archive">Archive</div>
-                <img src={logo} className="NavBar-logo" alt="logo" />
+                <div className="NavBar-flight">SQ666</div>
+                <div className="NavBar-menu">
+                    <div className="NavBar-defects">Defects</div>
+                    <div className="NavBar-analytics">Analytics</div>
+                    <div className="NavBar-archive">Archive</div>
+                    <img src={logo} className="NavBar-logo" alt="logo" />
+                </div>
             </div>
         );
     }

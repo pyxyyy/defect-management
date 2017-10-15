@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './FlightPage.css';
-import Flight from '../../components/Flight/Flight';
 import SideBar from "../../components/SideBar/SideBar";
+import Flight from "../../components/Flight/Flight";
 
 class FlightPage extends Component {
     constructor(props) {
@@ -20,7 +20,9 @@ class FlightPage extends Component {
                         <div className={locationStyle}><span>By Location</span></div>
                         <div className={typeStyle}><span>By Type</span></div>
                     </div>
-                    <Flight className="FlightPage-body" />
+                    <div className="FlightPage-display-blueprint">
+                        <Flight className="FlightPage-body" />
+                    </div>
                 </div>
                 <div className="FlightPage-SideBar"><SideBar /></div>
             </div>
@@ -29,4 +31,3 @@ class FlightPage extends Component {
 }
 
 export default FlightPage;
-{}
