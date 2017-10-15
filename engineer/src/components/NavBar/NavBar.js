@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../../img/logo.svg';
+import logo from '../../img/trans-logo.svg';
 import './NavBar.css';
 import { connect } from 'react-redux';
 

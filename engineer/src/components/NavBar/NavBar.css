@@ -1,6 +1,6 @@
 .NavBar {
-    background-color: #f5f5f5;
-    color: black;
+    background-color: #1d4886;
+    color: white;
     height: 5%;
     padding: 10px 40px 10px 40px;
     display: flex;
@@ -12,6 +12,11 @@
 
 .NavBar-flight {
 
+}
+
+.NavBar-flight:hover {
+    cursor: pointer;
+    color: #fcd130;
 }
 
 .NavBar-menu {
