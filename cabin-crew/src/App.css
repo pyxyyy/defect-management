@@ -166,5 +166,18 @@
     margin: 0 30%;
 }
 
-.btnSubmit {
+.btnCrewSubmit {
+    padding:1em 4em;
+    border: none;
+    background-color: #7f8c8d;
+    color: #fff;
+}
+
+.btnCrewSubmit:hover {
+    background-color: #464545;
+    cursor: pointer;
+}
+
+.Input-input{
+    line-height: 2em;
 }

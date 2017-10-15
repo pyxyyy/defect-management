@@ -50,7 +50,7 @@ class App extends Component {
                     <div className="InputNum">Enter the defect's location:</div>
                     <div className="InputGroup">
                     <input className="Input-input"type="text" name="name" />
-                    <input className="btnSubmit" type="submit" onClick={this.changeCrewState} />
+                    <input className="btnCrewSubmit" type="submit" onClick={this.changeCrewState} />
                     </div>
                 </div>;
 
@@ -93,6 +93,7 @@ class App extends Component {
                         </div>
                         </div>
                         </div>
+                        <input className="btnCrewSubmit" type="submit" onClick={this.changeCrewState} />
                         </div>;
 
         let changePage = this.state.isFirstPage ? page1 : page2;

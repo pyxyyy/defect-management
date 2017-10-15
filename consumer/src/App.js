@@ -74,8 +74,8 @@ class App extends Component {
                         <span>Reading Light</span>
                     </div>
                     <div className="SelectDefect-button">
-                        <img src={o} alt="Others" />
-                        <span>Others</span>
+                        <img src={o} alt="Inform Cabin Crew" />
+                        <span>Inform Cabin Crew</span>
                     </div>
                 </div>
             </div>
