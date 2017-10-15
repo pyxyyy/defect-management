@@ -10,7 +10,9 @@
     "react-fontawesome": "^1.6.1",
     "react-scripts": "1.0.14",
     "react-countup": "^2.3.0",
-    "recharts": "^1.0.0-alpha.6"
+    "recharts": "^1.0.0-alpha.6",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",

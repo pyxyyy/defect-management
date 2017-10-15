@@ -1,38 +1,68 @@
 import React, { Component } from 'react';
 import './App.css';
-import LandingPage from "./pages/LandingPage/LandingPage";
+import { connect } from 'react-redux';
+import AnalyticsPage from "./pages/AnalyticsPage/AnalyticsPage";
 import ArchivePage from "./pages/ArchivePage/ArchivePage";
-import FlightPage from "./pages/FlightPage/FlightPage";
+import DefectsPage from "./pages/Defects/DefectsPage";
 import NavBar from "./components/NavBar/NavBar";
+import LandingPage from "./pages/LandingPage/LandingPage";
 
 class App extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            page: "Flight", // set your page here to see it displayed
-        }
-    }
-
     render() {
 
-        let pageComponent = "";
-        if (this.state.page === "Archive") {
-            pageComponent = <ArchivePage/>
-        } else if (this.state.page === "Flight") {
-            pageComponent = <FlightPage/>
-        } else {
-            pageComponent = <LandingPage/>
+        let page = "";
+        switch(this.props.page) {
+            case ('Landing'):
+                page = <LandingPage />;
+                break;
+            case ('Defects'):
+                page = <DefectsPage />;
+                break;
+            case ('Archive'):
+                page = <ArchivePage />;
+                break;
+            case ('Analytics'):
+                page = <AnalyticsPage />;
+                break;
+            default:
+                page = <LandingPage />;
         }
+        const display = (this.props.page === "Landing")
+            ?
+            <div>
+                {page}
+            </div>
+            :
+            <div>
+                <NavBar/>
+                {page}
+            </div>;
 
         return (
             <div className="App">
-                <NavBar />
-                {pageComponent}
+                {display}
             </div>
         );
     }
 
 }
+const mapStateToProps = (state) => {
+    return {
+        page: state.page
+    }
+};
 
-export default App;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        nav: (page) => {
+            dispatch({
+                type: 'nav',
+                page: page
+            });
+        },
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);
+
