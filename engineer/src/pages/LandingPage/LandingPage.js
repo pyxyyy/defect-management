@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './LandingPage.css';
 import { connect } from 'react-redux';
 
+import CountUp from 'react-countup';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
+
 class LandingPage extends Component {
     render() {
         return (
