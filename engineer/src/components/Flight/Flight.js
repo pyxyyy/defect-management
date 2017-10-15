@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Flight.css';
 import Seat from '../../img/seat.svg';
-
+import ToiletSvg from '../../img/toilet.svg';
 
 class Flight extends Component {
 
@@ -91,11 +91,15 @@ class Toilet extends Component {
                 <table className="grid1">
                     <tbody>
                     <tr>
-                        <td className='toilet'>Toilet</td>
+                        <td className='toilet'>
+                            <img className="toilet-svg" src={ToiletSvg} />
+                        </td>
                     </tr>
                     <tr><td> </td></tr>
                     <tr>
-                        <td className='toilet'>Toilet</td>
+                        <td className='toilet'>
+                            <img className="toilet-svg" src={ToiletSvg} />
+                        </td>
                     </tr>
                     </tbody>
                 </table>

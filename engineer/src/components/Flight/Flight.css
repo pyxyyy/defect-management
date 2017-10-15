@@ -65,9 +65,11 @@ h1 {
 }
 
 .toilet {
-    padding-top: 80%;
-    background: lightgrey;
-    color: #333;
+    padding: 40% 0;
+}
+
+.toilet-svg {
+    width: 100%;
 }
 
 li {
