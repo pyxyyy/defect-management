@@ -15,6 +15,22 @@ class App extends Component {
             isFirstPage : true,
         }
     }
+    
+    markClickedA(){
+        this.setState({
+            buttonA : !this.state.buttonA
+        })
+    }
+    markClickedB(){
+        this.setState({
+            buttonB : !this.state.buttonB
+        })
+    }
+    markClickedC(){
+        this.setState({
+            buttonC : !this.state.buttonC
+        })
+    }
 
     onSelect() {
         this.setState({
@@ -29,12 +45,12 @@ class App extends Component {
 
         const page1 =
             <div>
-                <form>
+                <form className="InputForm">
                     <label className="InputNum">
                         Please input a number:
                         <input type="text" name="name" />
                     </label>
-                    <input type="submit" value="Submit" />
+                    <input className="InputSubmit" type="submit" value="Submit" />
                 </form>
             </div>;
 

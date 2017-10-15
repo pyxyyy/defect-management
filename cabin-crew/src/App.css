@@ -1,8 +1,14 @@
+.InputForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .InputNum {
     font-family: "Montserrat-Light", sans-serif;
     text-align: center;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin-top: 20%;
+    margin-left: 10%;
 }
 
