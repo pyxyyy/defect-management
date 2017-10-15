@@ -22,7 +22,25 @@ class DefectsPage extends Component {
             seat10: [],
             seat11: [],
             incomplete: ['12', '42', '69', '88', '122'],
-            complete: ['29', '50']
+            complete: ['29', '50'],
+            issues: [
+                {
+                    "title": "Meal Tray",
+                    "time": "23:41, 8 September 2017",
+                    "logger": "Passenger",
+                    "commentsTS": false,
+                    "commentsCA": true,
+                    "pending": true
+                },
+                {
+                    "title": "Seat Belt",
+                    "time": "8:41, 18 September 2017",
+                    "logger": "Cabin Crew",
+                    "commentsTS": true,
+                    "commentsCA": false,
+                    "pending": false
+                },
+            ]
         };
         for (let i = 0; i < 10; i++) {
             this.state.seat.push('' + i);
@@ -98,6 +116,7 @@ class DefectsPage extends Component {
                 </div>
                 <div className="DefectsPage-SideBar"><SideBar
                     seatNumber = {this.state.seatNumber }
+                    issues = {this.state.issues }
                 /></div>
             </div>
         );
