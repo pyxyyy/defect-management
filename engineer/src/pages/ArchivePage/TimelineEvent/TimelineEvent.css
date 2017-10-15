@@ -49,12 +49,12 @@
 }
 
 .timeline-content:hover, .timeline-content:hover .fa  {
-    background-color: #1d4886;
+    background-color: #fcb130;
     color: #ffffff;
 }
 
 .timeline-content:hover::before {
-    border-color: transparent #1d4886 transparent transparent;
+    border-color: transparent #fcb130 transparent transparent;
 }
 
 .num-of-defects {

@@ -54,8 +54,8 @@ ul li > ul li a {
 
 ul li > ul li:hover, ul li > ul li:hover a {
     font-weight:bold;
-    color: #1d4886;
-    border-color: #1d4886;
+    color: #fcb130;
+    border-color: #fcb130;
 }
 
 .timeline-nav ul li > ul li {
@@ -68,4 +68,8 @@ ul li > ul li:hover, ul li > ul li:hover a {
 
 .timeline-year {
     margin-top: 2em;
+}
+
+.timeline-list > ul {
+    margin-top:50px;
 }
