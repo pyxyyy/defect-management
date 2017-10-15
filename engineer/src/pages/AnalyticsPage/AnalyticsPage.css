@@ -90,8 +90,9 @@ input:checked + .slider:before {
 
 .Analytics-Graph {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -99,6 +100,16 @@ input:checked + .slider:before {
     height: 20%;
     margin-right: 30%;
     background-color: #fff;
+}
+
+.Analytics-Graph-label-x {
+    margin-left: -50px;
+}
+
+.Analytics-Graph-label-y {
+    text-align: left;
+    margin-left: calc(50% - 550px);
+
 }
 
 .Analytics-DefectTypes {

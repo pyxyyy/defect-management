@@ -47,16 +47,18 @@ class AnalyticsPage extends Component {
                             <span className="TotalNumDefects-Words">Total Defects</span>
                         </div>
                     </div>
-                   <div className="Analytics-Graph">
+                    <div className="Analytics-Graph-label-y">Total Number of Defects</div><br/>
+                    <div className="Analytics-Graph">
                         <LineChart width={1000} height={400} data={data}
                                    margin={{ top: 5, right: 55, left: 5, bottom: 5 }}>
-                            <XAxis hide={false} dataKey="name" />
-                            <YAxis hide={false}/>
-                            <CartesianGrid strokeDasharray="3 3"/>
+                            <XAxis dataKey="name" />
+                            <YAxis />
                             <Tooltip/>
                             <Legend />
                             <Line type="monotone" dataKey="SQ 31" stroke="#fcb130" activeDot={{r: 8}}/>
                         </LineChart>
+                        <br/>
+                       <div className="Analytics-Graph-label-x">Day</div>
                     </div>
                     <div className="Analytics-DefectTypes">
                         <div className="SeatDefects">
