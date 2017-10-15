@@ -12,3 +12,113 @@
     margin-left: 10%;
 }
 
+.App {
+    text-align: center;
+    background-color: white;
+}
+
+.Defects {
+    font-family: 'Montserrat-Light', sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.Instructions {
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.SelectDefect {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Montserrat-Light', sans-serif;
+}
+
+.SelectDefect-1 {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.SelectDefect-2 {
+    text-align: center;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.SelectDefect-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    color: white;
+    background-color: #fcb130;
+    padding: 15px;
+}
+
+.SelectDefect-button:hover {
+    cursor: pointer;
+    background-color: #1d4886;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+
+.SelectDefect-button-clicked {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    outline:none;
+    font-size: 18px;
+    color: white;
+    background-color: #1d4886;
+    padding: 15px;
+}
+
+.SelectDefect-button-unclicked {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    width: 300px;
+    border-radius: 10px;
+    outline:none;
+    border: none;
+    font-size: 18px;
+    color: white;
+    background-color: #fcb130;
+    padding: 15px;
+}
+
+.SelectDefect-button-unclicked:hover {
+    cursor: pointer;
+    background-color: #1d4886;
+    -webkit-transition: background-color 200ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}

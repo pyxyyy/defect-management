@@ -14,6 +14,8 @@ class App extends Component {
         this.state = {
             isFirstPage : true,
         }
+
+        this.changeCrewState = this.changeCrewState.bind(this);
     }
 
     markClickedA(){
@@ -33,6 +35,7 @@ class App extends Component {
     }
 
     onSelect() {
+    changeCrewState() {
         this.setState({
             isFirstPage: !this.state.isFirstPage
         })
@@ -45,13 +48,13 @@ class App extends Component {
 
         const page1 =
             <div>
-                <form className="InputForm">
+                <div className="InputForm">
                     <label className="InputNum">
                         Please input a number:
                         <input type="text" name="name" />
                     </label>
-                    <input className="InputSubmit" type="submit" value="Submit" />
-                </form>
+                    <input type="submit" onClick={this.changeCrewState} />
+                </div>
             </div>;
 
         const page2 = <div className="Defects">
