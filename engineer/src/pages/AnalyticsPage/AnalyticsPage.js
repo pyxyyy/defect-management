@@ -49,7 +49,7 @@ class AnalyticsPage extends Component {
                     </div>
                     <div className="Analytics-Graph-label-y">Total Number of Defects</div><br/>
                     <div className="Analytics-Graph">
-                        <LineChart width={1000} height={400} data={data}
+                        <LineChart width={1000} height={300} data={data}
                                    margin={{ top: 5, right: 55, left: 5, bottom: 5 }}>
                             <XAxis dataKey="name" />
                             <YAxis />
