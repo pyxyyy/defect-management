@@ -1,5 +1,6 @@
 const initialCommonState = {
     page : "Landing",
+    color : false
 };
 const reducer =
     function (state = initialCommonState, action) {
@@ -7,6 +8,10 @@ const reducer =
             case "nav":
                 return Object.assign({}, state, {
                     page: action.page
+                });
+            case "color":
+                return Object.assign({}, state, {
+                    color: true
                 });
             default:
                 return state;
