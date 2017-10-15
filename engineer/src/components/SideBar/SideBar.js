@@ -25,7 +25,7 @@ class SideBar extends Component {
         return (
             <div className="SideBar">
                 <div className="SideBar-header">
-                <div className="SideBar-header-unit">34B</div>
+                <div className="SideBar-header-unit">{this.props.seatNumber}</div>
                     <div className="SideBar-header-progress">
                         <div className="SideBar-header-progress-circ1" />
                         <div className={this.props.color ? "SideBar-header-progress-line1" : "SideBar-header-progress-line"} />
