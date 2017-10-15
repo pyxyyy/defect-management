@@ -17,8 +17,8 @@ class ArchivedSideBar extends Component {
                 <ArchivedSideBarIssue title="Audio Jack" time="34 defects reported" logger="30 defects resolved" commentsTS={false} commentsCA={true} pending={false}/>
                 <ArchivedSideBarIssue title="Meal Tray" time="74 defects reported" logger="74 defects resolved" commentsTS={false} commentsCA={true} pending={true}/>
                 <ArchivedSideBarIssue title="Reading Light" time="15 defects reported" logger="15 defects resolved" commentsTS={false} commentsCA={true} pending={true}/>
-                <ArchivedSideBarIssue title="Overhead Storage" time="7 defects reported" logger="7 defects resolved" commentsTS={false} commentsCA={true} pending={true}/>
-                <ArchivedSideBarIssue title="Toilet" time="1 defect reported" logger="1 defect resolved" commentsTS={false} commentsCA={true} pending={true}/>
+                <ArchivedSideBarIssue title="Overhead Bin" time="7 defects reported" logger="7 defects resolved" commentsTS={false} commentsCA={true} pending={true}/>
+                <ArchivedSideBarIssue title="Washroom" time="1 defect reported" logger="1 defect resolved" commentsTS={false} commentsCA={true} pending={true}/>
                 <ArchivedSideBarIssue title="Others" time="3 defects reported" logger="2 defects resolved" commentsTS={false} commentsCA={true} pending={false}/>
             </div>
         );

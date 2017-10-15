@@ -7,8 +7,7 @@ class ArchivedSideBarIssue extends Component {
         super(props);
     }
     render() {
-        const markPendingComponent = (this.props.pending) ? <span /> :
-            <div className="SideBarIssue-header-mark-pending">Defered</div>;
+        const markPendingComponent = (this.props.pending) ? <span /> : <span/>;
 
         const commentsTSComponent =
             <div>
@@ -35,7 +34,6 @@ class ArchivedSideBarIssue extends Component {
                     <div className="SideBarIssue-header-title">{this.props.title}</div>
                     <div className="SideBarIssue-header-mark">
                         {markPendingComponent}
-                        <div className="SideBarIssue-header-mark-resolved">Resolved</div>
                     </div>
                 </div>
                 <div className="SideBarIssue-info">
