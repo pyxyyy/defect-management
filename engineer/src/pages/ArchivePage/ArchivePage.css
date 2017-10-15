@@ -8,13 +8,13 @@ a, a:hover, a:focus, a:visited {
     color: #000;
 }
 
-.div-col-3 {
-    width:33.3%;
+.div-col-2 {
+    width:16.7%;
     float:left;
 }
 
-.div-col-9 {
-    width: 66.7%;
+.div-col-10 {
+    width: 83.3%;
     float: left;
 }
 

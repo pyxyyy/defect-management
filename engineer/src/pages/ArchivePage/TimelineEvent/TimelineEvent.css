@@ -1,6 +1,7 @@
 .timeline {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 .timeline-shapes {
     display: flex;
@@ -45,6 +46,15 @@
     display: flex;
     align-items:center;
     justify-content: space-between;
+}
+
+.timeline-content:hover, .timeline-content:hover .fa  {
+    background-color: #1d4886;
+    color: #ffffff;
+}
+
+.timeline-content:hover::before {
+    border-color: transparent #1d4886 transparent transparent;
 }
 
 .num-of-defects {
