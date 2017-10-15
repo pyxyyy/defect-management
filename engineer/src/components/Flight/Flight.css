@@ -57,12 +57,20 @@ h1 {
 
 .incomplete {
     color: #fff;
-    background-color: red;
+    background-color: indianred;
+    border-radius: 15px;
 }
 
 .complete {
     color: #fff;
-    background-color: green;
+    background-color: #fcb130;
+    border-radius: 15px;
+}
+
+.selected {
+    color: #fff;
+    background-color: #1d4886;
+    border-radius: 15px;
 }
 
 .pending {
