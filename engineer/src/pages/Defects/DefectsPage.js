@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './DefectsPage.css';
 import SideBar from "../../components/SideBar/SideBar";
 import Flight from "../../components/Flight/Flight";
+import Type from "../../components/Type/Type"
 
 class DefectsPage extends Component {
     constructor(props) {
@@ -26,21 +27,21 @@ class DefectsPage extends Component {
             selected: ['34'],
             issues: [
                 {
-                    "title": "Meal Tray",
-                    "time": "23:41, 8 September 2017",
-                    "logger": "Passenger",
-                    "commentsTS": false,
-                    "commentsCA": true,
-                    "pending": true
-                },
-                {
-                    "title": "Seat Belt",
+                    "title": "Chair",
                     "time": "8:41, 18 September 2017",
                     "logger": "Cabin Crew",
                     "commentsTS": true,
                     "commentsCA": false,
                     "pending": false
                 },
+                {
+                    "title": "Meal Tray",
+                    "time": "23:41, 8 September 2017",
+                    "logger": "Passenger",
+                    "commentsTS": false,
+                    "commentsCA": true,
+                    "pending": true
+                }
             ],
             exampleIssues: [
                 {
@@ -111,6 +112,40 @@ class DefectsPage extends Component {
     render() {
         const locationStyle = (this.state.location) ? "DefectsPage-display-header-selected" : "DefectsPage-display-header-unselected";
         const typeStyle = (!this.state.location) ? "DefectsPage-display-header-selected" : "DefectsPage-display-header-unselected";
+        const flight = <Flight className="DefectsPage-body"
+                               onClickData = { this.onClickData.bind(this) }
+                               { ...this.state }
+            // seat = { this.state.seat }
+            // seat1 = { this.state.seat1 }
+            // seat2 = {this.state.seat2 }
+            // sea3 = { this.state.seat3 }
+            // seat4 = { this.state.seat4 }
+            // seat5 = {this.state.seat5 }
+            // seat6= { this.state.seat6 }
+            // seat7 = { this.state.seat7 }
+            // seat8 = {this.state.seat8 }
+            // seat9 = { this.state.seat9 }
+            // seat10 = {this.state.seat10 }
+            // seat11 = { this.state.seat11 }
+            // complete = { this.state.complete }
+            // incomplete = { this.state.incomplete }
+        />
+        const type = <Type
+            defect={
+                [{
+                    "type": "Chair",
+                    "number": "34B, 66B, 76D"
+               },
+                    {
+                        "type": "Meal Tray",
+                        "number": "81B, 123E"
+                    },
+                    {
+                        "type": "Chair",
+                        "number": "4B"
+                    }]
+            }
+        />
         return (
             <div className="DefectsPage">
                 <div className="DefectsPage-display">
@@ -123,24 +158,7 @@ class DefectsPage extends Component {
                         </div>
                     </div>
                     <div className="DefectsPage-display-blueprint">
-                        <Flight className="DefectsPage-body"
-                                onClickData = { this.onClickData.bind(this) }
-                                { ...this.state }
-                                // seat = { this.state.seat }
-                                // seat1 = { this.state.seat1 }
-                                // seat2 = {this.state.seat2 }
-                                // sea3 = { this.state.seat3 }
-                                // seat4 = { this.state.seat4 }
-                                // seat5 = {this.state.seat5 }
-                                // seat6= { this.state.seat6 }
-                                // seat7 = { this.state.seat7 }
-                                // seat8 = {this.state.seat8 }
-                                // seat9 = { this.state.seat9 }
-                                // seat10 = {this.state.seat10 }
-                                // seat11 = { this.state.seat11 }
-                                // complete = { this.state.complete }
-                                // incomplete = { this.state.incomplete }
-                        />
+                        {this.state.location? flight: type}
                     </div>
                 </div>
                 <div className="DefectsPage-SideBar"><SideBar

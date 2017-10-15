@@ -27,7 +27,7 @@ class SideBar extends Component {
             </div>;
         const otherIssues =
             <div>
-                <SideBarIssue title="Meal Tray" time="23:41, 8 September 2017" logger="Passenger" commentsTS={true} commentsCA={false} pending={false} />
+                <SideBarIssue title="Chair" time="23:41, 8 September 2017" logger="Passenger" commentsTS={true} commentsCA={false} pending={false} />
                 <SideBarIssue title="Seat Belt" time="07:10, 8 September 2017" logger="Cabin Crew" commentsTS={false} commentsCA={true} pending={true} />
             </div>;
 
