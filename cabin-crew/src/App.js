@@ -15,7 +15,7 @@ class App extends Component {
             isFirstPage : true,
         }
     }
-    
+
     markClickedA(){
         this.setState({
             buttonA : !this.state.buttonA
