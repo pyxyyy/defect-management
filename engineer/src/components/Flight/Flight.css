@@ -24,6 +24,8 @@ h1 {
 }
 
 .section2 {
+    padding-bottom: 12%;
+    padding-left: 2%;
     width: 10%;
     display: inline-block;
 }
@@ -55,9 +57,15 @@ h1 {
 
 .incomplete {
     color: #fff;
+    background-color: red;
 }
 
 .complete {
+    color: #fff;
+    background-color: green;
+}
+
+.pending {
     color: #fff;
 }
 
