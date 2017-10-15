@@ -23,7 +23,7 @@ class ArchiveDefectsPage extends Component {
                         <ArchivedFlight className="DefectsPage-body" />
                     </div>
                 </div>
-                <div className="DefectsPage-SideBar"><ArchivedSideBar date="14 Oct 2017"/></div>
+                <div className="DefectsPage-SideBar"><ArchivedSideBar date="1 Sep 2017"/></div>
             </div>
         );
     }
