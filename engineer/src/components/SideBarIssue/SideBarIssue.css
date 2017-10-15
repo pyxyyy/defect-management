@@ -72,3 +72,16 @@
     outline: none;
 }
 
+.SideBarIssue-header-mark-restore {
+    margin: 0 5px;
+    padding: 3px 6px;
+    background-color: #7f8c8d;
+    color: #FFFFFF;
+    border-radius: 5px;
+    transition: color 0.2s linear;
+}
+
+.SideBarIssue-header-mark-restore:hover {
+    background-color: #464545;
+    cursor: pointer;
+}

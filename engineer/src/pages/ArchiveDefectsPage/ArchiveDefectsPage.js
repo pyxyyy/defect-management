@@ -17,13 +17,18 @@ class ArchiveDefectsPage extends Component {
             <div className="DefectsPage">
                 <div className="DefectsPage-display">
                     <div className="DefectsPage-display-header">
-                        <div className={locationStyle}><span>By Location</span></div>
+                        <div className={locationStyle} onClick={() => {this.setState({location:true})}}>
+                            <span>By Location</span>
+                        </div>
+                        <div className={typeStyle} onClick={() => {this.setState({location:false})}}>
+                            <span>By Type</span>
+                        </div>
                     </div>
                     <div className="DefectsPage-display-blueprint">
                         <ArchivedFlight className="DefectsPage-body" />
                     </div>
                 </div>
-                <div className="DefectsPage-SideBar"><ArchivedSideBar date="1 Sep 2017"/></div>
+                <div className="DefectsPage-SideBar"><ArchivedSideBar /></div>
             </div>
         );
     }
