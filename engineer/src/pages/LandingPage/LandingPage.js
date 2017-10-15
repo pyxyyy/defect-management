@@ -2,76 +2,72 @@ import React, { Component } from 'react';
 import './LandingPage.css';
 
 import CountUp from 'react-countup';
+import Switch from 'react-toggle-switch'
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recharts';
 
 class LandingPage extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            buttonA : false,
-            buttonB : false,
-            buttonC : false,
+
         }
     }
 
-    markClickedA(){
-        this.setState({
-            buttonA : !this.state.buttonA
-        })
-    }
-    markClickedB(){
-        this.setState({
-            buttonB : !this.state.buttonB
-        })
-    }
-    markClickedC(){
-        this.setState({
-            buttonC : !this.state.buttonC
-        })
-    }
-    render() {
-        let styleButtonA = this.state.buttonA ? "SelectFlight-button-clicked" : "SelectFlight-button-unclicked";
-        let styleButtonB = this.state.buttonB ? "SelectFlight-button-clicked" : "SelectFlight-button-unclicked";
-        let styleButtonC = this.state.buttonC ? "SelectFlight-button-clicked" : "SelectFlight-button-unclicked";
+   render() {
+
+        const data = [
+            {name: '30 Aug', SQ1370: 2400},
+            {name: '31 Aug', SQ1370: 3256},
+            {name: '1 Sept', SQ1370: 1462},
+            {name: '2 Sept', SQ1370: 6422},
+            {name: '3 Sept', SQ1370: 7231},
+            {name: '4 Sept', SQ1370: 8350},
+            {name: '5 Sept', SQ1370: 5329},
+            {name: '6 Sept', SQ1370: 8051},
+            {name: '7 Sept', SQ1370: 1490},
+            {name: '8 Sept', SQ1370: 1018},
+        ];
 
         return (
             <div className="LandingPage">
-                <div className="SelectFlight">
-                    <div className="SelectFlight-1">
-                        <button className={styleButtonA} onClick={() => { this.markClickedA() }}>Flight SQ1370</button>
-                        <button className="SelectFlight-button">Flight SQ0000</button>
-                        <button className={styleButtonB} onClick={() => { this.markClickedB() }}>Flight SQ1438</button>
-                        <button className="SelectFlight-button">Flight SQ6666</button>
-                    </div>
-                    <div className="SelectFlight-2"><button className={styleButtonC} onClick={() => { this.markClickedC() }}>Flight SQ1406</button>
-                        <button className="SelectFlight-button">Flight SQ3467</button>
-                        <button className="SelectFlight-button">Flight SQ1420</button>
-                        <button className="SelectFlight-button">Flight SQ1</button>
-                    </div>
-                </div>
-                <div className="Analytics">
-                    <div className="Analytics-Num">
+                <div className="Analytics-One-Flight">
+                    <div className="header">
+                        <div className="Toggle">
+                        </div>
                         <div className="TotalNumDefects">
                             <CountUp className="TotalNumDefects-Num" start={0} end={1018} duration={2}/>
-                            <p>Total number of defects</p>
-                        </div>
-                        <div className="SeatDefects">
-                            <CountUp className="SeatDefects-Num" start={0} end={50} duration={2}/>
-                            <p>Seat Defects</p>
-                        </div>
-                        <div className="TrayDefects">
-                            <CountUp className="TrayDefects-Num" start={0} end={120} duration={2}/>
-                            <p>Meal Tray Defects</p>
-                        </div>
-                        <div className="AudioDefects">
-                            <CountUp className="AudioDefects-Num" start={0} end={325} duration={2}/>
-                            <p>Audio Jack Defects</p>
-                        </div>
-                        <div className="ReadingLightDefects">
-                            <CountUp className="ReadingLightDefects-Num" start={0} end={672} duration={2}/>
-                            <p>Reading Light Defects</p>
+                            <span className="TotalNumDefects-Words">Total Defects</span>
                         </div>
                     </div>
+                   <div className="Analytics-Graph">
+                        <LineChart width={1000} height={400} data={data}
+                                   margin={{ top: 5, right: 55, left: 5, bottom: 5 }}>
+                            <XAxis hide={false} dataKey="name" />
+                            <YAxis hide={false}/>
+                            <CartesianGrid strokeDasharray="3 3"/>
+                            <Tooltip/>
+                            <Legend />
+                            <Line type="monotone" dataKey="SQ1370" stroke="#8884d8" activeDot={{r: 8}}/>
+                        </LineChart>
+                    </div>
+                    <div className="Analytics-DefectTypes">
+                        <div className="SeatDefects">
+                            <CountUp className="SeatDefects-Num" start={0} end={353} duration={2}/>
+                            <span className="SeatDefects-Words">Seats</span>
+                        </div>
+                        <div className="WashroomDefects">
+                            <CountUp className="WashroomDefects-Num" start={0} end={4} duration={2}/>
+                            <span className="WashroomDefects-Words">Washrooms</span>
+                        </div>
+                        <div className="OverheadBinDefects">
+                            <CountUp className="OverheadBinDefects-Num" start={0} end={642} duration={2}/>
+                            <span className="OverheadBinDefects-Words">Overhead Bins</span>
+                        </div>
+                    </div>
+                </div>
+                <div className="Analytics-All-Flights">
+
                 </div>
             </div>
         );
