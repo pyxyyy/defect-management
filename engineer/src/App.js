@@ -6,6 +6,7 @@ import ArchivePage from "./pages/ArchivePage/ArchivePage";
 import DefectsPage from "./pages/Defects/DefectsPage";
 import NavBar from "./components/NavBar/NavBar";
 import LandingPage from "./pages/LandingPage/LandingPage";
+import ArchivedDefectsPage from "./pages/ArchiveDefectsPage/ArchiveDefectsPage";
 
 class App extends Component {
 
@@ -24,6 +25,9 @@ class App extends Component {
                 break;
             case ('Analytics'):
                 page = <AnalyticsPage />;
+                break;
+            case ('ArchivedDefects'):
+                page = <ArchivedDefectsPage/>;
                 break;
             default:
                 page = <LandingPage />;

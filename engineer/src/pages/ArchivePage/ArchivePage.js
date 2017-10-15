@@ -5,6 +5,7 @@ import {Row, Col} from 'react-bootstrap';
 import TimelineEvent from "./TimelineEvent/TimelineEvent";
 import ScrollAnimation from 'react-animate-on-scroll';
 import ArchiveDefectsPage from '../ArchiveDefectsPage/ArchiveDefectsPage';
+import { connect } from 'react-redux';
 
 class ArchivePage extends Component {
 
@@ -16,7 +17,7 @@ class ArchivePage extends Component {
                 <div className="div-row">
                     <div className="div-col-10 timeline-list">
                         <ul>
-                            <li id="2017">
+                            <li id="2017" onClick={() => {this.props.nav("ArchivedDefects")}}>
                                 <ScrollAnimation animateIn='fadeIn' animateOnce="true">
                                     <TimelineEvent timelineDate="1 September 2017, Friday" defects="3" />
                                 </ScrollAnimation>
@@ -95,5 +96,21 @@ class ArchivePage extends Component {
     }
 }
 
+const mapStateToProps = (state) => {
+    return {
+        page: state.page
+    }
+};
 
-export default ArchivePage;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        nav: (page) => {
+            dispatch({
+                type: 'nav',
+                page: page
+            });
+        },
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ArchivePage);

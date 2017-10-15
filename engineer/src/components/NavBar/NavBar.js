@@ -10,7 +10,7 @@ class NavBar extends Component {
     render() {
         return (
             <div className="NavBar">
-                <div className="NavBar-flight" onClick={() => {this.props.nav("Landing")}}>SQ666</div>
+                <div className="NavBar-flight" onClick={() => {this.props.nav("Landing")}}>SQ 31</div>
                 <div className="NavBar-menu">
                     <div className="NavBar-defects" onClick={() => this.props.nav("Defects")}>Defects</div>
                     <div className="NavBar-analytics" onClick={() => {this.props.nav("Analytics")}}>Analytics</div>
