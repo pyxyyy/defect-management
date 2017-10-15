@@ -1,3 +1,20 @@
 .FlightPage {
     font-family: 'Montserrat-Light', sans-serif;
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.FlightPage-display {
+    width: 75%;
+    background-color: #f5f5f5;
+}
+
+.FlightPage-display-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.FlightPage-SideBar {
+    width: 25%;
 }
