@@ -1,0 +1,45 @@
+.SideBar {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    text-align: left;
+}
+
+.SideBar-header {
+    margin: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.SideBar-header-unit {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 28px;
+}
+
+.SideBar-header-progress {
+    display: flex;
+    flex-direction: row;
+}
+
+.SideBar-header-progress-circ1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #fcd130;
+}
+
+.SideBar-header-progress-circ {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #d6d6d6;
+}
+
+.SideBar-header-progress-line {
+    margin-top: 8px;
+    height: 0;
+    width: 50px;
+    border: solid 2px #d6d6d6;
+}
