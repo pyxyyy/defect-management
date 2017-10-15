@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './Flight.css';
 import Seat from '../../img/seat.svg';
 
+
 class Flight extends Component {
 
     constructor() {
