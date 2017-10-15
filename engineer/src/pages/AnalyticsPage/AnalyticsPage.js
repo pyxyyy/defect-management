@@ -47,7 +47,7 @@ class AnalyticsPage extends Component {
                             <CartesianGrid strokeDasharray="3 3"/>
                             <Tooltip/>
                             <Legend />
-                            <Line type="monotone" dataKey="SQ1370" stroke="#8884d8" activeDot={{r: 8}}/>
+                            <Line type="monotone" dataKey="SQ666" stroke="#8884d8" activeDot={{r: 8}}/>
                         </LineChart>
                     </div>
                     <div className="Analytics-DefectTypes">
