@@ -18,7 +18,7 @@ class ArchivePage extends Component {
                         <ul>
                             <li id="2017" onClick={() => {this.props.nav("ArchivedDefects")}}>
                                 <ScrollAnimation animateIn='fadeIn' animateOnce="true">
-                                    <TimelineEvent timelineDate="1 September 2017, Friday" defects="83" />
+                                    <TimelineEvent timelineDate="8 September 2017, Friday" defects="83" />
                                 </ScrollAnimation>
                             </li>
                             <li>
