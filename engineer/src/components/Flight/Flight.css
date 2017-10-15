@@ -1,0 +1,67 @@
+#app {
+}
+
+h1 {
+    text-align: center;
+}
+
+.aeroplane {
+    background-image: url("aeroplane1.png");
+    background-size: 100% 100%;
+    height: 500px;
+}
+
+.section1 {
+    padding-left: 30%;
+    width: 15%;
+    padding-top: 13.55%;
+    display: inline-block;
+}
+
+.section2 {
+    padding-left: 30%;
+    width: 15%;
+    padding-top: 0.2%;
+    display: inline-block;
+}
+
+.section3 {
+    padding-left: 5%;
+    width: 15%;
+    padding-top: 13.55%;
+    display: inline-block;
+}
+
+.section4 {
+    padding-left: 5%;
+    width: 15%;
+    display: inline-block;
+}
+
+.grid td {
+    width: 8px;
+    height: 8px;
+    text-align: center;
+    float: left;
+    margin: 1px;
+}
+
+.grid td:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.incomplete {
+    background: red;
+    color: #fff;
+    display: inline-block;
+}
+
+.complete {
+    background: green;
+    color: #333;
+}
+
+li {
+    list-style: none;
+}
