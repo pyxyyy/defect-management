@@ -4,6 +4,7 @@ import {FontAwesome} from 'react-fontawesome';
 import {Row, Col} from 'react-bootstrap';
 import TimelineEvent from "./TimelineEvent/TimelineEvent";
 import ScrollAnimation from 'react-animate-on-scroll';
+import ArchiveDefectsPage from '../ArchiveDefectsPage/ArchiveDefectsPage';
 
 class ArchivePage extends Component {
 
@@ -17,7 +18,7 @@ class ArchivePage extends Component {
                         <ul>
                             <li id="2017">
                                 <ScrollAnimation animateIn='fadeIn' animateOnce="true">
-                                    <TimelineEvent timelineDate="1 September 2017, Friday" defects="3"/>
+                                    <TimelineEvent timelineDate="1 September 2017, Friday" defects="3" />
                                 </ScrollAnimation>
                             </li>
                             <li>
