@@ -41,10 +41,11 @@ class App extends Component {
 
       return (
         <div className="Defects">
-                <span className="Instructions">
-                If you noticed any defects, help us by logging it below. <br/>
-                Logging this defect will ensure that your experience with us is top-notch!
-                </span>
+            <span className="Instructions">
+                We are sorry something is broken.
+            You can notify us of the defect(s) by tapping on one or more of the options below. <br/>
+            Logging this defect will ensure that your journey with us will be a great one.<br/>
+            </span>
             <div className="SelectDefect">
                 <div className="SelectDefect-1">
 
