@@ -3,14 +3,21 @@ import './FlightPage.css';
 import SideBar from "../../components/SideBar/SideBar";
 
 class FlightPage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            location : true
+        }
+    }
     render() {
+        const locationStyle = (this.state.location) ? "FlightPage-display-header-selected" : "FlightPage-display-header-unselected";
+        const typeStyle = (!this.state.location) ? "FlightPage-display-header-selected" : "FlightPage-display-header-unselected";
         return (
             <div className="FlightPage">
                 <div className="FlightPage-display">
                     <div className="FlightPage-display-header">
-                        <span className="FlightPage-display-header-location">By Location</span>
-                        <span className="FlightPage-display-header-type">By Type</span>
-
+                        <div className={locationStyle}><span>By Location</span></div>
+                        <div className={typeStyle}><span>By Type</span></div>
                     </div>
                 </div>
                 <div className="FlightPage-SideBar"><SideBar /></div>

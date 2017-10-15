@@ -52,7 +52,7 @@ h1 {
 }
 
 .incomplete {
-    background: red;
+    background-image: url("seat.svg");
     color: #fff;
     display: inline-block;
 }
@@ -64,4 +64,9 @@ h1 {
 
 li {
     list-style: none;
+}
+
+.seat {
+    height: 100%;
+    width: 100%;
 }

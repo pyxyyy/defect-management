@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './Flight.css';
+import Seat from '../../img/seat.svg';
 
 class Flight extends Component {
 
@@ -13,7 +14,7 @@ class Flight extends Component {
             incomplete: [
             ],
             complete: []
-        }
+        };
         for (let i = 0; i < 34; i++) {
             this.state.seat.push('');
         }
@@ -115,9 +116,10 @@ class DrawGrid extends Component {
                     <tbody>
                     <tr>
                         { this.props.seat.map( row =>
-                            <td
-                                className={this.props.complete.indexOf(row) > -1? 'complete': 'incomplete'}
-                                key={row} onClick = {e => this.onClickSeat(row)}> </td>) }
+                            <td className={this.props.complete.indexOf(row) > -1? 'complete': 'incomplete'}
+                                key={row} onClick = {e => this.onClickSeat(row)}>
+                                <img className="seat" src={Seat} />
+                            </td>) }
                     </tr>
                     </tbody>
                 </table>
