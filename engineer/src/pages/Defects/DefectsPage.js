@@ -17,8 +17,12 @@ class DefectsPage extends Component {
             <div className="DefectsPage">
                 <div className="DefectsPage-display">
                     <div className="DefectsPage-display-header">
-                        <div className={locationStyle}><span>By Location</span></div>
-                        <div className={typeStyle}><span>By Type</span></div>
+                        <div className={locationStyle} onClick={() => {this.setState({location:true})}}>
+                            <span>By Location</span>
+                        </div>
+                        <div className={typeStyle} onClick={() => {this.setState({location:false})}}>
+                            <span>By Type</span>
+                        </div>
                     </div>
                     <div className="DefectsPage-display-blueprint">
                         <Flight className="DefectsPage-body" />

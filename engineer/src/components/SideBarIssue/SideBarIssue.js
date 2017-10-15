@@ -1,14 +1,25 @@
 import React, { Component } from 'react';
 import './SideBarIssue.css';
 import SideBarIssueComment from "../SideBarIssueComment/SideBarIssueComment";
+import { connect } from 'react-redux';
 
 class SideBarIssue extends Component {
     constructor(props) {
         super(props);
+        this.state = {
+            showPending : true
+        }
+    }
+    toggleShowPending() {
+        this.props.color(true);
+        this.setState({
+            showPending : !this.state.showPending
+        });
+        this.forceUpdate();
     }
     render() {
         const markPendingComponent = (this.props.pending) ? <span /> :
-            <div className="SideBarIssue-header-mark-pending">Defer</div>;
+            <div className={this.state.showPending ? "SideBarIssue-header-mark-pending" : "SideBarIssue-header-mark-pending-hide"} onClick={() => {this.toggleShowPending()}}>Defer</div>;
 
         const commentsTSComponent =
             <div>
@@ -51,4 +62,21 @@ class SideBarIssue extends Component {
     }
 }
 
-export default SideBarIssue;
+const mapStateToProps = (state) => {
+    return {
+        color: state.color
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        color: (boolean) => {
+            dispatch({
+                type: 'color',
+                page: boolean
+            });
+        },
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(SideBarIssue);
