@@ -8,50 +8,14 @@ a, a:hover, a:focus, a:visited {
     color: #000;
 }
 
-.div-col-2 {
-    width:16.7%;
+.div-col-3 {
+    width:33.3%;
     float:left;
 }
 
-.div-col-10 {
-    width: 83.3%;
+.div-col-9 {
+    width: 66.7%;
     float: left;
-}
-
-.timeline > div:first-child {
-    width: 7px !important;
-    background-color: #fcb130 !important;
-    left: 16px !important;
-}
-
-.timeline > div:not(:first-child) > div:first-child {
-    background: #fcb130 !important;
-    top: 25% !important;
-}
-
-.timeline-event {
-    text-align: left;
-    font-size: 1.2em;
-}
-
-.timeline-event div:nth-child(3) {
-    padding:1em 1em !important;
-    background-color: #f5f5f5 !important;
-}
-
-.timeline-event p {
-    margin:0.7em;
-    font-weight:bold;
-}
-
-.timeline-event span {
-    margin: 0 1em;
-}
-
-.timeline-event label {
-    font-size: 1em;
-    padding: 0 0.5em;
-    color: #1d4886;
 }
 
 .archive-header + div > section {
@@ -76,7 +40,7 @@ a, a:hover, a:focus, a:visited {
 
 ul li {
     list-style: none;
-    line-height: 2em;
+    line-height: 1.5em;
     text-align: left;
 }
 
@@ -94,7 +58,14 @@ ul li > ul li:hover, ul li > ul li:hover a {
     border-color: #1d4886;
 }
 
-ul li + li {
-    margin-top:0.5em;
+.timeline-nav ul li > ul li {
+    margin-top: 0.3em
 }
 
+.timeline-list ul li {
+    position: relative;
+}
+
+.timeline-year {
+    margin-top: 2em;
+}
