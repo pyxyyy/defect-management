@@ -1,0 +1,33 @@
+.NavBar {
+    background-color: #f5f5f5;
+    color: black;
+    height: 5%;
+    padding: 10px 40px 10px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Montserrat-Light', sans-serif;
+}
+.NavBar-logo {
+    height: 40px;
+}
+
+.NavBar-home {
+    padding-right: 50px;
+    height: 100%;
+}
+
+.NavBar-home:hover {
+    color: #fcd130;
+    cursor: pointer;
+}
+
+.NavBar-archive {
+    padding-right: 50px;
+}
+
+.NavBar-archive:hover {
+    color: #fcd130;
+    cursor: pointer;
+}
